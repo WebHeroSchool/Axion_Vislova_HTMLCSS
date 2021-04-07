@@ -1,0 +1,8 @@
+* {
+  border: 1px dashed red;
+}
+
+body {
+  font: 12px/11px gotham_proregular, arial, helvetica, sans-serif;
+  margin: 0;
+}
