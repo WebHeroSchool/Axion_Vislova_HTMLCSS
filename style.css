@@ -119,9 +119,10 @@ a {
 }
 
 .banner {
+  margin: 0 auto;
   width: 1030px;
   height: 281px;
-  background: url('/img/rob-potter-422534-unsplash.jpg');
+  background: url('img/rob-potter-422534-unsplash.jpg');
 }
 
 .banner__title {
