@@ -87,7 +87,7 @@ a {
   width: 17px;
   border: none;
   border-bottom: 1px solid #000;
-  background: transparent url(/img/loupe.svg) no-repeat center center;
+  background: transparent url(img/loupe.svg) no-repeat center center;
 }
 
 .user-login {
@@ -114,12 +114,13 @@ a {
 .user-lang {
   width: 20px;
   height: 20px;
-  background: no-repeat url('/img/united-states.png') center;
+  background: no-repeat url('img/united-states.png') center;
   margin-top: 1px;
 }
 
 .banner {
   margin: 0 auto;
+  margin-bottom: 51px;
   width: 1030px;
   height: 281px;
   background: url('img/rob-potter-422534-unsplash.jpg');
@@ -152,26 +153,149 @@ a {
   content: '';
   width: 100%;
   height: 100%;
-  background: url('/img/Arrow.png') no-repeat;
+  background: url('img/Arrow.png') no-repeat;
   top: 20%;
   right: -13.3%;
 }
 
+.feature {
+  margin-bottom: 45px;
+}
+
+.feature__title {
+  text-align: center;
+  font: 22px/21px gotham_probold, arial, helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
 .feature__inner {
   display: flex;
+  justify-content: space-between;
+}
+
+.feature__decoration {
+  width: 3px;
+  background-image: url('img/decoration.png');
+  opacity: 0.2;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.feature__item {
+  width: 230px;
+}
+
+.feature__item-img {
+  padding-left: 23px;
+  padding-top: 2px;
+  margin-bottom: 27px;
+}
+
+.feature__item:nth-child(3) .feature__item-img {
+  padding-right: 3px;
+}
+
+.feature__item:nth-child(4) .feature__item-img {
+  padding-right: 19px;
+}
+
+.feature__item-title {
+  margin: 0;
+  margin-bottom: 6px;
+  font: 12px/11px gotham_proregular, arial, helvetica, sans-serif;
+}
+
+.feature__item-title,
+.feature__wrapper {
+  padding-left: 12px;
+}
+
+.feature__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature__item-price {
+  font: 14px/14px gotham_probold, arial, helvetica, sans-serif;
 }
 
 .feature__item-colors {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature__color {
+  margin-right: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.feature__color:last-child {
+  margin-right: 11px;
+}
+
+.active {
+  width: 9px;
+  height: 9px;
+}
+
+.color_grey {
+  background-color: #c4c4c4;
+}
+
+.color_black {
+  background-color: #0e1211;
+}
+
+.color_red {
+  background: #b62e3c;
+}
+
+.color_yellow {
+  background: #fdb431;
+}
+
+.color_orange {
+  background: #e29d69;
+}
+
+.color_brown {
+  background: #762e31;
+}
+
+.color_dark-blue {
+  background: #41479b;
+}
+
+.color_blue {
+  background: #257da9;
 }
 
 .history {
+  width: 1030px;
   display: flex;
+  background: #000;
+}
+
+.history__video {
+  margin-top: 75px;
+  margin-left: 41px;
+  margin-bottom: 74px;
 }
 
 .history__inner {
   display: flex;
   flex-direction: column;
+}
+
+.history__title {
+  color: #fff;
+}
+
+.history__excerpt {
+  color: #fff;
 }
 
 .news__inner {
@@ -237,7 +361,7 @@ a {
     margin: 0 auto;
     width: 930px;
     height: 254px;
-    background: center url('/img/rob-potter-422534-unsplash-1024.jpg');
+    background: center url('img/rob-potter-422534-unsplash-1024.jpg');
   }
 
   .banner__title {
@@ -265,7 +389,7 @@ a {
     margin-left: 43px;
     width: 156px;
     height: 34px;
-    background: no-repeat url('/img/Axion-logo-1.png');
+    background: no-repeat url('img/Axion-logo-1.png');
   }
 
   .toggle-container {
@@ -357,7 +481,7 @@ a {
   }
 
   .banner__link::after {
-    background: no-repeat url('/img/Arrow-123.png');
+    background: no-repeat url('img/Arrow-123.png');
     top: 3px;
     left: 22.5%;
   }
@@ -371,7 +495,7 @@ a {
   .header__logo {
     margin-top: -9px;
     margin-left: 47px;
-    background: no-repeat url(/img/Axion-logo-1-s.png);
+    background: no-repeat url(img/Axion-logo-1-s.png);
   }
 
   .line::before {
@@ -407,7 +531,7 @@ a {
   }
 
   .banner__link::after {
-    background: no-repeat url('/img/Arrow-124.png');
+    background: no-repeat url('img/Arrow-124.png');
     top: 2px;
     left: 33.5%;
   }
