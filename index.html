@@ -4,31 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Axion</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./fonts.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="logo">
-          <img width="55" height="55" src="img/Axion-logo-1.svg" alt="logo" />
+        <div class="header__menu">
+          <div class="header__logo"></div>
+          <input id="toggle" type="checkbox" />
+          <label class="toggle-container" for="toggle">
+            <span class="line"></span>
+          </label>
+          <nav class="header__nav">
+            <a class="menu__item" href="#">Shop</a>
+            <a class="menu__item" href="#">News</a>
+            <a class="menu__item" href="#">Team</a>
+            <a class="menu__item" href="#">Legacy</a>
+            <a class="menu__item" href="#">HELP</a>
+          </nav>
         </div>
-        <nav class="menu">
-          <a class="menu__item" href="#">Shop</a>
-          <a class="menu__item" href="#">News</a>
-          <a class="menu__item" href="#">Team</a>
-          <a class="menu__item" href="#">Legacy</a>
-          <a class="menu__item" href="#">HELP</a>
-        </nav>
-        <div class="user">
+        <div class="header__user">
           <div class="user-search">
-            <img width="14" height="14" src="img/loupe.svg" alt="loupe" />
+            <form>
+              <input type="text" placeholder="" />
+              <button type="submit"></button>
+            </form>
           </div>
           <div class="user-login">SIGN IN</div>
-          <div class="user-cart">CART</div>
-          <div class="user-lang">
-            <img width="20" height="20" src="img/united-states.png" alt="en" />
-          </div>
+          <div class="user-cart">CART <span>1</span></div>
+          <div class="user-lang"></div>
         </div>
       </header>
       <section class="banner">
@@ -37,72 +42,85 @@
       </section>
       <section class="feature">
         <h2 class="feature__title">Featured product</h2>
-        <div class="feature__item">
-          <img
-            class="feature__item-img"
-            width="188"
-            height="173"
-            src="img/boots1.png"
-            alt="item1"
-          />
-          <h3 class="feature__item-title">Atlas Black/Rasta Axion</h3>
-          <div class="feature__item-price">$89.00</div>
-          <div class="feature__item-colors">
-            <span class="color_grey"></span>
-            <span class="color_black"></span>
-            <span class="color_red"></span>
-            <span class="color_yellow"></span>
+        <div class="feature__inner">
+          <div class="feature__item">
+            <img
+              class="feature__item-img"
+              width="188"
+              height="173"
+              src="img/boots1.png"
+              alt="item1"
+            />
+            <h3 class="feature__item-title">Atlas Black/Rasta Axion</h3>
+            <div class="feature__wrapper">
+              <div class="feature__item-price">$89.00</div>
+              <div class="feature__item-colors">
+                <span class="feature__color color_grey"></span>
+                <span class="feature__color color_black active"></span>
+                <span class="feature__color color_red"></span>
+                <span class="feature__color color_yellow"></span>
+              </div>
+            </div>
+            <span class="feature__decoration"></span>
           </div>
-        </div>
-        <div class="feature__item">
-          <img
-            class="feature__item-img"
-            width="188"
-            height="173"
-            src="img/boots2.png"
-            alt="item2"
-          />
-          <h3 class="feature__item-title">Camel/Chili Pepper Axion</h3>
-          <div class="feature__item-price">$74.00</div>
-          <div class="feature__item-colors">
-            <span class="color_grey"></span>
-            <span class="color_orange"></span>
-            <span class="color_red"></span>
-            <span class="color_yellow"></span>
+          <div class="feature__item">
+            <img
+              class="feature__item-img"
+              width="188"
+              height="173"
+              src="img/boots2.png"
+              alt="item2"
+            />
+            <h3 class="feature__item-title">Camel/Chili Pepper Axion</h3>
+            <div class="feature__wrapper">
+              <div class="feature__item-price">$74.00</div>
+              <div class="feature__item-colors">
+                <span class="feature__color color_grey"></span>
+                <span class="feature__color color_orange active"></span>
+                <span class="feature__color color_red"></span>
+                <span class="feature__color color_yellow"></span>
+              </div>
+            </div>
+            <span class="feature__decoration"></span>
           </div>
-        </div>
-        <div class="feature__item">
-          <img
-            class="feature__item-img"
-            width="188"
-            height="173"
-            src="img/boots3.png"
-            alt="item3"
-          />
-          <h3 class="feature__item-title">Mandel Smoke/Rust Axion</h3>
-          <div class="feature__item-price">$69.00</div>
-          <div class="feature__item-colors">
-            <span class="color_grey"></span>
-            <span class="color_brown"></span>
-            <span class="color_dark-blue"></span>
-            <span class="color_yellow"></span>
+          <div class="feature__item">
+            <img
+              class="feature__item-img"
+              width="188"
+              height="173"
+              src="img/boots3.png"
+              alt="item3"
+            />
+            <h3 class="feature__item-title">Mandel Smoke/Rust Axion</h3>
+            <div class="feature__wrapper">
+              <div class="feature__item-price">$69.00</div>
+              <div class="feature__item-colors">
+                <span class="feature__color color_grey"></span>
+                <span class="feature__color color_brown active"></span>
+                <span class="feature__color color_dark-blue"></span>
+                <span class="feature__color color_yellow"></span>
+              </div>
+            </div>
+            <span class="feature__decoration"></span>
           </div>
-        </div>
-        <div class="feature__item">
-          <img
-            class="feature__item-img"
-            width="188"
-            height="173"
-            src="img/boots4.png"
-            alt="item4"
-          />
-          <h3 class="feature__item-title">Cloud/Electric Blue Axion</h3>
-          <div class="feature__item-price">$69.00</div>
-          <div class="feature__item-colors">
-            <span class="color_grey"></span>
-            <span class="color_blue"></span>
-            <span class="color_red"></span>
-            <span class="color_yellow"></span>
+          <div class="feature__item">
+            <img
+              class="feature__item-img"
+              width="188"
+              height="173"
+              src="img/boots4.png"
+              alt="item4"
+            />
+            <h3 class="feature__item-title">Cloud/Electric Blue Axion</h3>
+            <div class="feature__wrapper">
+              <div class="feature__item-price">$69.00</div>
+              <div class="feature__item-colors">
+                <span class="feature__color color_grey"></span>
+                <span class="feature__color color_blue active"></span>
+                <span class="feature__color color_red"></span>
+                <span class="feature__color color_yellow"></span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -114,122 +132,128 @@
           src="img/video-img.jpg"
           alt="video"
         />
-        <h2 class="history__title">Legendary footwear reborn</h2>
-        <p class="history__excerpt">
-          We are a brand with a history and are relaunching for 2019. We’ve been
-          a part of the skater’s family ever since it’s early teenage years. And
-          now we presentate a new footwear collection.
-        </p>
-        <a href="#" class="history__link">Learn more</a>
+        <div class="history__inner">
+          <h2 class="history__title">Legendary footwear reborn</h2>
+          <p class="history__excerpt">
+            We are a brand with a history and are relaunching for 2019. We’ve
+            been a part of the skater’s family ever since it’s early teenage
+            years. And now we presentate a new footwear collection.
+          </p>
+          <a href="#" class="history__link">Learn more</a>
+        </div>
       </section>
       <section class="news">
         <h2 class="news__title">Recent stories</h2>
-        <div class="news__item">
-          <img
-            class="news__item-image"
-            width="307"
-            height="147"
-            src="img/news-1.jpg"
-            alt="news1"
-          />
-          <h3 class="news__item-title">Presents Justin Anagoa</h3>
-          <p class="news__item-text">
-            Anagoa’s been a part of the skater’s family ever since his early
-            teenage years. He’s been known to go big on and off the board, but
-            it’s been rare we get a glimpse into how Anagoa lives his
-            day-to-day, to see what makes Anagoa tick.
-          </p>
-          <a href="#" class="news__item-link">Learn more </a>
-          <time datetime="2018-08-11">11.08.2018</time>
-        </div>
-        <div class="news__item">
-          <img
-            class="news__item-image"
-            width="307"
-            height="147"
-            src="img/news-2.jpg"
-            alt="news2"
-          />
-          <h3 class="news__item-title">First Frontside flip</h3>
-          <p class="news__item-text">
-            Yoon recently discusses his first time shooting a signature Andrew
-            Reynolds frontside flip on The Berrics. Click the image below to see
-            the full gallery and read up on what happened that day.
-            <span>Photo:Yoon Sul</span>\
-          </p>
-          <a href="#" class="news__item-link">Learn more </a>
-          <time datetime="2018-08-17">17.08.2018</time>
-        </div>
-        <div class="news__item">
-          <img
-            class="news__item-image"
-            width="307"
-            height="147"
-            src="img/news-3.jpg"
-            alt="news3"
-          />
-          <h3 class="news__item-title">Kevin Baekkel is Pro</h3>
-          <p class="news__item-text">
-            Creature proudly announced today that they’re officially adding
-            Kevin Baekkel to their pro roster. After paying his dues for years,
-            killing it on last years Thrasher King of the Road, and constantly
-            lighting every spot he hits on fire.
-          </p>
-          <a href="#" class="news__item-link">Learn more </a>
-          <time datetime="2018-07-29">29.07.2018</time>
+        <div class="news__inner">
+          <div class="news__item">
+            <img
+              class="news__item-image"
+              width="307"
+              height="147"
+              src="img/news-1.jpg"
+              alt="news1"
+            />
+            <h3 class="news__item-title">Presents Justin Anagoa</h3>
+            <p class="news__item-text">
+              Anagoa’s been a part of the skater’s family ever since his early
+              teenage years. He’s been known to go big on and off the board, but
+              it’s been rare we get a glimpse into how Anagoa lives his
+              day-to-day, to see what makes Anagoa tick.
+            </p>
+            <a href="#" class="news__item-link">Learn more </a>
+            <time datetime="2018-08-11">11.08.2018</time>
+          </div>
+          <div class="news__item">
+            <img
+              class="news__item-image"
+              width="307"
+              height="147"
+              src="img/news-2.jpg"
+              alt="news2"
+            />
+            <h3 class="news__item-title">First Frontside flip</h3>
+            <p class="news__item-text">
+              Yoon recently discusses his first time shooting a signature Andrew
+              Reynolds frontside flip on The Berrics. Click the image below to
+              see the full gallery and read up on what happened that day.
+              <span>Photo:Yoon Sul</span>\
+            </p>
+            <a href="#" class="news__item-link">Learn more </a>
+            <time datetime="2018-08-17">17.08.2018</time>
+          </div>
+          <div class="news__item">
+            <img
+              class="news__item-image"
+              width="307"
+              height="147"
+              src="img/news-3.jpg"
+              alt="news3"
+            />
+            <h3 class="news__item-title">Kevin Baekkel is Pro</h3>
+            <p class="news__item-text">
+              Creature proudly announced today that they’re officially adding
+              Kevin Baekkel to their pro roster. After paying his dues for
+              years, killing it on last years Thrasher King of the Road, and
+              constantly lighting every spot he hits on fire.
+            </p>
+            <a href="#" class="news__item-link">Learn more </a>
+            <time datetime="2018-07-29">29.07.2018</time>
+          </div>
         </div>
       </section>
       <section class="gallery">
         <h2 class="gallery__title">#AXIONfootwear</h2>
-        <img
-          class="gallery__item"
-          width="147"
-          height="147"
-          src="img/photo1.jpg"
-          alt="ph1"
-        />
-        <img
-          class="gallery__item"
-          width="147"
-          height="147"
-          src="img/photo2.jpg"
-          alt="ph2"
-        />
-        <img
-          class="gallery__item"
-          width="147"
-          height="147"
-          src="img/photo3.jpg"
-          alt="ph3"
-        />
-        <img
-          class="gallery__item"
-          width="147"
-          height="147"
-          src="img/photo4.jpg"
-          alt="ph4"
-        />
-        <img
-          class="gallery__item"
-          width="147"
-          height="147"
-          src="img/photo5.jpg"
-          alt="ph5"
-        />
-        <img
-          class="gallery__item"
-          width="147"
-          height="147"
-          src="img/photo6.jpg"
-          alt="ph6"
-        />
-        <img
-          class="gallery__item"
-          width="147"
-          height="147"
-          src="img/photo7.jpg"
-          alt="ph7"
-        />
+        <div class="gallery__inner">
+          <img
+            class="gallery__item"
+            width="147"
+            height="147"
+            src="img/photo1.jpg"
+            alt="ph1"
+          />
+          <img
+            class="gallery__item"
+            width="147"
+            height="147"
+            src="img/photo2.jpg"
+            alt="ph2"
+          />
+          <img
+            class="gallery__item"
+            width="147"
+            height="147"
+            src="img/photo3.jpg"
+            alt="ph3"
+          />
+          <img
+            class="gallery__item"
+            width="147"
+            height="147"
+            src="img/photo4.jpg"
+            alt="ph4"
+          />
+          <img
+            class="gallery__item"
+            width="147"
+            height="147"
+            src="img/photo5.jpg"
+            alt="ph5"
+          />
+          <img
+            class="gallery__item"
+            width="147"
+            height="147"
+            src="img/photo6.jpg"
+            alt="ph6"
+          />
+          <img
+            class="gallery__item"
+            width="147"
+            height="147"
+            src="img/photo7.jpg"
+            alt="ph7"
+          />
+        </div>
       </section>
       <footer class="footer">
         <div class="footer__wrapper">

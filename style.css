@@ -1,8 +1,567 @@
-* {
+/** {
   border: 1px dashed red;
-}
+}*/
 
 body {
   font: 12px/11px gotham_proregular, arial, helvetica, sans-serif;
   margin: 0;
+}
+
+a {
+  color: #000;
+}
+
+.wrapper {
+  width: 88%;
+  margin: auto;
+}
+
+.header {
+  padding-top: 28px;
+  margin-bottom: 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#toggle,
+.toggle-container {
+  display: none;
+}
+
+.header__menu {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 55px;
+  height: 55px;
+  background: url('img/Axion-logo-1.svg') no-repeat center center;
+}
+
+.header__nav {
+  margin-top: 20px;
+  margin-left: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item {
+  margin-right: 35px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font: 12px/11px gotham_probold, arial, helvetica, sans-serif;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.header__user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-search {
+  margin-left: 0;
+}
+
+.user-search form {
+  padding-top: 5px;
+  height: 20px;
+  margin-right: 35px;
+  display: flex;
+}
+
+.user-search input {
+  width: 157px;
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+}
+
+.user-search button {
+  width: 17px;
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent url(img/loupe.svg) no-repeat center center;
+}
+
+.user-login {
+  margin-right: 35px;
+  font: 12px/11px gotham_probold, arial, helvetica, sans-serif;
+}
+
+.user-cart {
+  margin-right: 35px;
+  font: 12px/11px gotham_probold, arial, helvetica, sans-serif;
+}
+
+.user-cart span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #000;
+  font: 10px/15px gotham_probold, arial, helvetica, sans-serif;
+}
+
+.user-lang {
+  width: 20px;
+  height: 20px;
+  background: no-repeat url('img/united-states.png') center;
+  margin-top: 1px;
+}
+
+.banner {
+  margin: 0 auto;
+  margin-bottom: 51px;
+  width: 1030px;
+  height: 281px;
+  background: url('img/rob-potter-422534-unsplash.jpg');
+}
+
+.banner__title {
+  margin: 0;
+  width: 195px;
+  padding-top: 89px;
+  padding-left: 59px;
+  font: 30px/29px gotham_probold, arial, helvetica, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.banner__link {
+  position: relative;
+  display: block;
+  margin-top: 17px;
+  padding-left: 59px;
+  font: 12px/11px gotham_probold, arial, helvetica, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.banner__link::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: url('img/Arrow.png') no-repeat;
+  top: 20%;
+  right: -13.3%;
+}
+
+.feature {
+  margin-bottom: 45px;
+}
+
+.feature__title {
+  text-align: center;
+  font: 22px/21px gotham_probold, arial, helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.feature__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature__decoration {
+  width: 3px;
+  background-image: url('img/decoration.png');
+  opacity: 0.2;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.feature__item {
+  width: 230px;
+}
+
+.feature__item-img {
+  padding-left: 23px;
+  padding-top: 2px;
+  margin-bottom: 27px;
+}
+
+.feature__item:nth-child(3) .feature__item-img {
+  padding-right: 3px;
+}
+
+.feature__item:nth-child(4) .feature__item-img {
+  padding-right: 19px;
+}
+
+.feature__item-title {
+  margin: 0;
+  margin-bottom: 6px;
+  font: 12px/11px gotham_proregular, arial, helvetica, sans-serif;
+}
+
+.feature__item-title,
+.feature__wrapper {
+  padding-left: 12px;
+}
+
+.feature__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature__item-price {
+  font: 14px/14px gotham_probold, arial, helvetica, sans-serif;
+}
+
+.feature__item-colors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature__color {
+  margin-right: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.feature__color:last-child {
+  margin-right: 11px;
+}
+
+.active {
+  width: 9px;
+  height: 9px;
+}
+
+.color_grey {
+  background-color: #c4c4c4;
+}
+
+.color_black {
+  background-color: #0e1211;
+}
+
+.color_red {
+  background: #b62e3c;
+}
+
+.color_yellow {
+  background: #fdb431;
+}
+
+.color_orange {
+  background: #e29d69;
+}
+
+.color_brown {
+  background: #762e31;
+}
+
+.color_dark-blue {
+  background: #41479b;
+}
+
+.color_blue {
+  background: #257da9;
+}
+
+.history {
+  width: 1030px;
+  display: flex;
+  background: #000;
+}
+
+.history__video {
+  margin-top: 75px;
+  margin-left: 41px;
+  margin-bottom: 74px;
+}
+
+.history__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.history__title {
+  color: #fff;
+}
+
+.history__excerpt {
+  color: #fff;
+}
+
+.news__inner {
+  display: flex;
+}
+
+.gallery__inner {
+  display: flex;
+}
+
+.footer__wrapper {
+  display: flex;
+}
+
+.social {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 91%;
+  }
+
+  .header__logo {
+    margin-left: 4px;
+  }
+
+  .header__nav {
+    margin-left: 32px;
+  }
+
+  .user-search form {
+    height: 23px;
+    margin-right: 30px;
+  }
+
+  .user-search input {
+    width: 141px;
+  }
+
+  .user-login {
+    margin-right: 27px;
+  }
+
+  .user-cart {
+    margin-top: 3px;
+    margin-right: 27px;
+  }
+
+  .user-cart span {
+    width: 14px;
+  }
+
+  .user-lang {
+    width: 19px;
+  }
+
+  .header {
+    margin-bottom: 41px;
+  }
+
+  .banner {
+    margin: 0 auto;
+    width: 930px;
+    height: 254px;
+    background: center url('img/rob-potter-422534-unsplash-1024.jpg');
+  }
+
+  .banner__title {
+    padding-top: 75px;
+    padding-left: 54px;
+  }
+
+  .banner__link {
+    margin-top: 11px;
+    padding-left: 54px;
+  }
+
+  .banner__link::after {
+    right: -15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .header__logo {
+    margin-top: 7px;
+    margin-left: 43px;
+    width: 156px;
+    height: 34px;
+    background: no-repeat url('img/Axion-logo-1.png');
+  }
+
+  .toggle-container {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 21px;
+  }
+
+  .line::before {
+    content: '';
+    position: absolute;
+    background: #000;
+    height: 9px;
+    width: 61px;
+    top: 30px;
+    right: 23px;
+  }
+
+  .line::after {
+    content: '';
+    position: absolute;
+    top: 47px;
+    right: 23px;
+    background: #000;
+    height: 9px;
+    width: 61px;
+  }
+
+  .header__nav,
+  .header__user {
+    display: none;
+    margin-top: -23px;
+    margin-left: 26px;
+  }
+
+  #toggle:checked ~ .header__nav {
+    margin-top: 20px;
+    margin-left: -80px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header__nav {
+    margin: 0;
+  }
+
+  .menu__item {
+    width: 400px;
+    font: 40px/40px gotham_probold, arial, helvetica, sans-serif;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  #toggle:checked ~ .toggle-container > .line::after {
+    transform: rotate(45deg);
+    top: 30px;
+  }
+
+  #toggle:checked ~ .toggle-container > .line::before {
+    transform: rotate(135deg);
+    top: 30px;
+  }
+
+  .header {
+    margin-bottom: 39px;
+  }
+
+  .banner {
+    width: 100%;
+    height: 415px;
+    background-position: 17.2% 7%;
+    background-size: 200%;
+  }
+
+  .banner__title {
+    padding-top: 121px;
+    padding-left: 44px;
+    font: 50px/48px gotham_probold, arial, helvetica, sans-serif;
+  }
+
+  .banner__link {
+    margin-top: 47px;
+    padding-left: 44px;
+    font: 20px/20px gotham_probold, arial, helvetica, sans-serif;
+  }
+
+  .banner__link::after {
+    background: no-repeat url('img/Arrow-123.png');
+    top: 3px;
+    left: 22.5%;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    margin-bottom: 14px;
+  }
+
+  .header__logo {
+    margin-top: -9px;
+    margin-left: 47px;
+    background: no-repeat url(img/Axion-logo-1-s.png);
+  }
+
+  .line::before {
+    height: 5px;
+    width: 41px;
+    top: 12px;
+    right: 26px;
+  }
+
+  .line::after {
+    height: 6px;
+    width: 41px;
+    top: 22px;
+    right: 26px;
+  }
+
+  .banner {
+    height: 191px;
+    background-position: 19.2% 9%;
+    background-size: 187%;
+  }
+
+  .banner__title {
+    padding-top: 64px;
+    padding-left: 48px;
+    font: 20px/20px gotham_probold, arial, helvetica, sans-serif;
+  }
+
+  .banner__link {
+    margin-top: 17px;
+    padding-left: 48px;
+    font: 12px/11px gotham_probold, arial, helvetica, sans-serif;
+  }
+
+  .banner__link::after {
+    background: no-repeat url('img/Arrow-124.png');
+    top: 2px;
+    left: 33.5%;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__logo {
+    margin-top: -9px;
+    margin-left: 21px;
+  }
+
+  .line::before,
+  .line::after {
+    right: -1px;
+  }
+
+  .banner {
+    background-position: 24% 9%;
+    background-size: 220%;
+  }
+
+  .banner__title {
+    padding-left: 20px;
+  }
+
+  .banner__link {
+    padding-left: 20px;
+  }
+
+  .banner__link::after {
+    left: 30.5%;
+  }
 }

@@ -2,70 +2,70 @@
 
 @font-face {
   font-family: 'gotham_problack';
-  src: url('gothamproblack-webfont.woff') format('woff');
+  src: url('fonts/gothamproblack-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'gotham_problack_italic';
-  src: url('gothamproblackitalic-webfont.woff') format('woff');
+  src: url('fonts/gothamproblackitalic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'gotham_probold';
-  src: url('gothamprobold-webfont.woff') format('woff');
+  src: url('fonts/gothamprobold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'gotham_probold_italic';
-  src: url('gothamprobolditalic-webfont.woff') format('woff');
+  src: url('fonts/gothamprobolditalic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'gotham_proitalic';
-  src: url('gothamproitalic-webfont.woff') format('woff');
+  src: url('fonts/gothamproitalic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'gotham_prolight';
-  src: url('gothamprolight-webfont.woff') format('woff');
+  src: url('fonts/gothamprolight-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'gotham_prolight_italic';
-  src: url('gothamprolightitalic-webfont.woff') format('woff');
+  src: url('fonts/gothamprolightitalic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'gotham_promedium';
-  src: url('gothampromedium-webfont.woff') format('woff');
+  src: url('fonts/gothampromedium-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'gotham_promedium_italic';
-  src: url('gothampromediumitalic-webfont.woff') format('woff');
+  src: url('fonts/gothampromediumitalic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'gotham_proregular';
-  src: url('gothamproregular-webfont.woff') format('woff');
+  src: url('fonts/gothamproregular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
