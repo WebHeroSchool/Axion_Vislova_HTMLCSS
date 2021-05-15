@@ -484,6 +484,7 @@ footer {
 
 .footer__wrapper {
   width: calc(100% - 140px);
+  max-width: 1170px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
