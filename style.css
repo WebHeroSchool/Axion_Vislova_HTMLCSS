@@ -1257,7 +1257,7 @@ footer {
 
   .copyrights {
     margin-top: 65px;
-    padding-right: 0px;
+    padding-right: 0;
   }
 }
 
@@ -1325,8 +1325,7 @@ footer {
   }
 
   .feature__inner {
-    margin-bottom: 73px;
-    margin: 0 auto;
+    margin: 0 auto 73px auto;
     width: 70.9%;
   }
 
